@@ -3,15 +3,15 @@ language: java
 jdk: openjdk8
 
 services:
-    - docker
+   - docker
 
 # skip installation step
 install: true
 
 cache:
-    directories:
-        - $HOME/.m2
+directories:
+   - $HOME/.m2
 
 script:
-    - cd hellodocker
-    - mvn -f clean verify -Pdocker
+   - cd hellodocker
+   - mvn clean verify -Pdocker
